@@ -1,0 +1,10 @@
+
+<div class="container" style="width: 450px; margin: 0 auto">
+    <h1>Livros disponíveis:</h1>
+    <a href="/">Adicionar livro</a>
+    <ul style="display: flex; flex-direction: column">
+    {{#each books}}
+        <il style="border-bottom: 1px solid;padding: 5px; margin: 5px;flex-direction"><a href="/books/{{this.id}}"><strong>{{this.title}}</strong></a> -> {{this.pageqty}} páginas</il>
+    {{/each}}
+    </ul>
+</div>
