@@ -6,6 +6,9 @@
     {{#each books}}
         <il style="border-bottom: 1px solid;padding: 5px; margin: 5px;flex-direction"><a href="/books/{{this.id}}"><strong>{{this.title}}</strong></a> -> {{this.pageqty}} páginas - 
         <a href="/books/edit/{{this.id}}">Editar</a></il>
+        <form action="/books/remove/{{this.id}}" method="post">
+            <input type="submit" value="Remover">
+        </form>
     {{/each}}
     </ul>
 </div>
