@@ -4,7 +4,8 @@
     <a href="/">Adicionar livro</a>
     <ul style="display: flex; flex-direction: column">
     {{#each books}}
-        <il style="border-bottom: 1px solid;padding: 5px; margin: 5px;flex-direction"><a href="/books/{{this.id}}"><strong>{{this.title}}</strong></a> -> {{this.pageqty}} páginas</il>
+        <il style="border-bottom: 1px solid;padding: 5px; margin: 5px;flex-direction"><a href="/books/{{this.id}}"><strong>{{this.title}}</strong></a> -> {{this.pageqty}} páginas - 
+        <a href="/books/edit/{{this.id}}">Editar</a></il>
     {{/each}}
     </ul>
 </div>
